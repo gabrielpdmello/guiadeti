@@ -1,0 +1,47 @@
+@use "../abstracts/index" as *;
+
+// boxes used to display some type of information
+
+.box {
+    padding: 1rem;
+    margin: 3rem 0;
+    border-radius: 0.5rem;
+    position: relative;
+     
+    &--tip {
+        border: 5px double $box-tip-color;
+    }
+
+    &--note {
+        border: 5px double $box-note-color;
+    }
+
+    &--learn-more {
+        border: 5px double $box-learn-more-color;
+    }
+}
+
+.box-icon {
+    position: absolute;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-size: cover;
+    left: -5rem;
+    top: 0;
+
+    &--tip {
+        background-image: url($baseurl + "/assets/icons/tip.avif");
+    }
+
+    &--note {
+        background-image: url($baseurl + "/assets/icons/note.avif");
+    }
+
+    &--learn-more {
+        background-image: url($baseurl + "/assets/icons/learn-more.avif");
+    }
+
+    &--warning {
+        background-image: url($baseurl + "/assets/icons/warning.avif");
+    }
+}

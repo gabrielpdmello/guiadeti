@@ -1,0 +1,17 @@
+---
+title: Guia de TI
+---
+<h1>Guia de TI</h1>
+<p>O objetivo deste site é servir como um guia simples para aprender e revisar alguns conceitos de diversas áreas da TI, do básico ao avançado.</p>
+
+{% include box-tip.html content="O site [roadmap.sh](https://roadmap.sh/roadmaps) possui vários mapas de aprendizado de diversas áreas da TI." %}
+
+{% include box-note.html content="Saber inglês ajuda muito para aprender conceitos de TI, pois existe muito mais material de estudo em inglês do que em português." %}
+
+<h2>Guias</h2>
+<ul>
+{% for area in site.areas %}
+    <h3><a href="{{ area.url | relative_url }}">{{ area.title }}</a> </h3>
+    {{ area.excerpt }}
+{% endfor %}
+</ul>

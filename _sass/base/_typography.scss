@@ -1,0 +1,48 @@
+/**
+ * Basic typography style for copy text
+ */
+
+ @use "../abstracts/index" as *;
+
+html {
+    font-size: 62.5%; //10px - facilita cálculos com em
+}
+
+body {
+    font-size: 1.7em;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+p + p {
+    margin-top: 1rem;
+}
+
+li {
+    line-height: 1.6em;
+}
+
+a {
+    color: $link-color;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.2em;
+    margin: 1em 0 0.4em 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 1em 0 0.4em 0;
+}
