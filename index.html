@@ -8,10 +8,18 @@ title: Guia de TI
 
 {% include box-note.html content="Saber inglês ajuda muito para aprender conceitos de TI, pois existe muito mais material de estudo em inglês do que em português." %}
 
-<h2>Guias</h2>
+<h2>Areas</h2>
 <ul>
 {% for area in site.areas %}
     <h3><a href="{{ area.url | relative_url }}">{{ area.title }}</a> </h3>
     {{ area.excerpt }}
+{% endfor %}
+</ul>
+
+<h2>Guias</h2>
+<ul>
+{% for guide in site.guides %}
+    <h3><a href="{{ guide.url | relative_url }}">{{ guide.title }}</a> </h3>
+    {{ guide.excerpt }}
 {% endfor %}
 </ul>

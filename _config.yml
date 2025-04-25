@@ -4,6 +4,8 @@ url: ""
 collections:
   areas:
     output: true
+  guides:
+    output: true
 
 defaults:
   - scope:
@@ -14,7 +16,12 @@ defaults:
       path: ""
       type: areas
     values:
-      layout: "area"
+      layout: "content"
+  - scope:
+      path: ""
+      type: guides
+    values:
+      layout: "content"
 
 plugins:
   - jekyll-feed
