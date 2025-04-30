@@ -3,10 +3,9 @@
 // boxes used to display some type of information
 
 .box {
-    padding: 1rem;
     margin: 3rem 0;
     border-radius: 0.5rem;
-    position: relative;
+    padding: 1rem;
      
     &--tip {
         border: 5px double $box-tip-color;
@@ -21,27 +20,17 @@
     }
 }
 
-.box-icon {
-    position: absolute;
-    width: 4.5rem;
-    height: 4.5rem;
-    background-size: cover;
-    left: -5rem;
-    top: 0;
-
-    &--tip {
-        background-image: url($baseurl + "/assets/icons/tip.avif");
+.box-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+    &__icon {
+        width: 2.5rem;
+        margin-right: 1rem;
     }
+}
 
-    &--note {
-        background-image: url($baseurl + "/assets/icons/note.avif");
-    }
-
-    &--learn-more {
-        background-image: url($baseurl + "/assets/icons/learn-more.avif");
-    }
-
-    &--warning {
-        background-image: url($baseurl + "/assets/icons/warning.avif");
-    }
+.box p {
+    margin-left: 1rem;
 }

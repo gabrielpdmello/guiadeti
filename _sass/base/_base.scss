@@ -19,10 +19,10 @@ body {
     margin: auto;
     font-family: NeueHansKendrick, Arial, sans-serif;
 
-    @media only screen and (max-width: 48em) {
+    @media screen and (max-width: $phone-width) {
         max-width: 100%;
-        margin: 0.5em;
-    } 
+        margin: 1em;
+    }
 }
 
 ul {

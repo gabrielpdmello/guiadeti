@@ -1,4 +1,7 @@
-<div class="box box--tip" title="Aviso">
-    <span class="box-icon box-icon--tip"></span>
+<div class="box box--warning">
+    <div class="box-label">
+        <img class="box-label__icon" src="{% link /assets/icons/warning.png %}">
+        <strong class="box-label__text">Aviso:</strong>
+    </div>
     {{ include.content | markdownify }}
 </div>
