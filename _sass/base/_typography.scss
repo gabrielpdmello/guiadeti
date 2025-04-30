@@ -24,12 +24,12 @@ li {
     line-height: 1.6em;
 }
 
-a {
-    color: $link-color;
+li + li {
+    margin-top: 0.8rem;
 }
 
-ul {
-    list-style-type: none;
+a {
+    color: $link-color;
 }
 
 h1 {
