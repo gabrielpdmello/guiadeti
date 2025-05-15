@@ -200,3 +200,15 @@ Vue.js é uma framework JS de código livre para construir interfaces de usuári
 
 - [Vue: Introdução](https://pt.vuejs.org/guide/introduction.html)
 - [roadmap.sh: Vue Developer](https://roadmap.sh/vue)
+
+## Geradores de sites estáticos
+Um gerador de site estático é uma ferramenta que gera um site HTML estático completo com base em dados brutos e um conjunto de modelos.
+
+- [O que é um gerador de site estático?](https://www.cloudflare.com/pt-br/learning/performance/static-site-generator/)
+
+### Jekyll
+Jekyll é um gerador de site estático. Ele pega o conteúdo escrito em uma linguagem de marcação e usa layouts para criar um site estático. Jekyll é uma gema do Ruby, então é preciso instalar Ruby para poder usar Jekyll.
+
+- [Step by Step Tutorial by Jekyll](https://jekyllrb.com/docs/step-by-step/01-setup/)
+- [Jekyll Tutorial by Giraffe Academy](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB)
+- [Como criar um site com Jekyll e GitHub]({% link _guides/criar-site-com-jekyll.md %})
