@@ -11,15 +11,19 @@ title: Guia de TI
 <h2>Áreas</h2>
 <ul>
 {% for area in site.areas %}
-    <h3><a href="{{ area.url | relative_url }}">{{ area.title }}</a> </h3>
-    {{ area.excerpt }}
+    <li>
+        <h3><a href="{{ area.url | relative_url }}">{{ area.title }}</a> </h3>
+        {{ area.excerpt }}
+    </li>
 {% endfor %}
 </ul>
 
 <h2>Guias</h2>
 <ul>
 {% for guide in site.guides %}
-    <h3><a href="{{ guide.url | relative_url }}">{{ guide.title }}</a> </h3>
-    {{ guide.excerpt }}
+    <li>
+        <h3><a href="{{ guide.url | relative_url }}">{{ guide.title }}</a> </h3>
+        {{ guide.excerpt }}
+    </li>
 {% endfor %}
 </ul>
